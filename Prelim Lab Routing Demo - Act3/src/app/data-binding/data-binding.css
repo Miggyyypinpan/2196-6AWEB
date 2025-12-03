@@ -1,0 +1,105 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/mnt/data/e327a273-380e-4949-8028-51d09729a97f.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 30px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  max-width: 600px;
+  width: 95%;
+  text-align: center;
+  border: 3px solid #99caeb;
+  margin: 20px auto;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  background-color: #99caeb;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #99caeb;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #99caeb;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+h2 {
+  color: #99caeb;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+input {
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #99caeb;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  background-color: #99caeb;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #99caeb;
+}
+
+.form-image, img {
+  max-width: 100%;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.passing { color: green; font-weight: bold; }
+.failing { color: red; font-weight: bold; }
+
+.box {
+  border: 2px solid #99caeb;
+  margin: 10px auto;
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+}

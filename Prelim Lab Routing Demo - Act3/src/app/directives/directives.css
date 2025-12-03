@@ -1,0 +1,199 @@
+/* ===== Typography & Global Reset ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #c9e9ff, #e0f3ff);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== Main Layout ===== */
+main {
+  width: 900px;
+  margin: auto;
+  border: 3px solid #99caeb; /* Border line restored */
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 40px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  max-width: 900px;
+  width: 95%;
+  text-align: center;
+  border: 3px solid #99caeb; /* Border line restored */
+  margin: 40px auto;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  margin-bottom: 25px;
+  background: #e7f4fd;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  padding: 15px;
+  border: 4px solid #99caeb; /* Border line restored */
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 18px;
+  background-color: #99caeb;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 2px solid #7bb4e3; /* Border line added */
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #fff;
+  color: #99caeb;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== Text Styles ===== */
+h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #1b3d57;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #99caeb;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #1b3d57;
+  line-height: 1.7;
+  margin: 10px 0;
+  padding: 5px 10px;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 98%;
+  border-collapse: collapse;
+  margin: 50px 10px;
+  background: rgba(255,255,255,0.7);
+  border: 3px solid #6fabd3; /* Border line restored */
+  border-radius: 8px;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border: 3px solid #6396b8; /* Border lines restored */
+}
+
+th {
+  background: #99caeb;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 14px 28px;
+  margin: 15px;
+  border: 2px solid #99caeb; /* Border line added */
+  border-radius: 12px;
+  background-color: #99caeb;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #66a9d9;
+  transform: translateY(-3px);
+}
+
+/* ===== Input Fields ===== */
+input[type="text"] {
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: 2px solid #99caeb; /* Border line restored */
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #66a9d9;
+  outline: none;
+}
+
+/* ===== Status Styles ===== */
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive {
+  color: red;
+  font-weight: bold;
+}
+
+.warning {
+  color: darkred;
+  font-weight: bold;
+  background: rgba(255, 200, 200, 0.6);
+  padding: 6px;
+  border-radius: 6px;
+  border: 2px solid darkred; /* Border line added */
+}
+
+/* ===== Images ===== */
+.form-image, img {
+  max-width: 100%;
+  margin: 12px 0;
+  border-radius: 14px;
+  border: 2px solid #99caeb; /* Border line restored */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.form-image:hover, img:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Utility Box ===== */
+.box {
+  border: 2px solid #99caeb; /* Border line restored */
+  margin: 15px auto;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
