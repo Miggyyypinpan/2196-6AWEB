@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "angular-routing-lab": {
+    "angularRoutingDemo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -30,7 +30,6 @@
             "scripts":[
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
-            
           },
           "configurations": {
             "production": {
@@ -60,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-routing-lab:build:production"
+              "buildTarget": "angularRoutingDemo:build:production"
             },
             "development": {
-              "buildTarget": "angular-routing-lab:build:development"
+              "buildTarget": "angularRoutingDemo:build:development"
             }
           },
           "defaultConfiguration": "development"
