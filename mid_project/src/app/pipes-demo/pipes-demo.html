@@ -1,0 +1,78 @@
+<div class="p-6 bg-gray-100 min-h-screen">
+  <h1 class="text-4xl font-bold text-gray-800 mb-4">Angular Pipes Demo</h1>
+  <p class="text-gray-600 mb-6">Pinpin, Miguel-Vernard E.</p>
+
+  <!-- Grid layout for compact cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+    <!-- Date Pipe -->
+    <div class="bg-white shadow rounded-lg p-4 max-w-sm">
+      <h2 class="text-xl font-bold text-gray-700 mb-2">Date Pipe</h2>
+      <ul class="space-y-1 text-sm text-gray-700">
+        <li>Short: {{presentDate | date:'shortDate'}}</li>
+        <li>Full: {{presentDate | date:'fullDate'}}</li>
+        <li>Custom: {{presentDate | date:'M/dd/yyyy'}}</li>
+        <li>Time: {{presentDate | date:'h:mm'}}</li>
+        <li>Upper: {{presentDate | date:'fulldate' | uppercase}}</li>
+        <li>Lower: {{presentDate | date:'medium' | lowercase}}</li>
+      </ul>
+    </div>
+
+   <!-- Async Pipe -->
+    <div class="bg-white shadow rounded-lg p-4 max-w-sm">
+      <h2 class="text-xl font-bold text-gray-700 mb-2">Async Pipe</h2>
+      <p class="text-sm text-gray-700">
+        Seconds changing in Time:
+        <span class="font-mono text-blue-600">{{time$ | async | date:'mediumTime'}}</span>
+      </p>
+    </div>
+
+
+    <!-- Currency Pipe -->
+    <div class="bg-white shadow rounded-lg p-4 max-w-sm">
+      <h2 class="text-xl font-bold text-gray-700 mb-2">Currency Pipe</h2>
+      <p class="text-sm text-gray-700">Default: {{ price | currency:'':true }}</p>
+      <p class="text-sm text-gray-700">INR: {{ price | currency:'INR' }}</p>
+    </div>
+
+    <!-- Slice Pipe -->
+    <div class="bg-white shadow rounded-lg p-4 max-w-sm">
+      <h2 class="text-xl font-bold text-gray-700 mb-2">Slice Pipe</h2>
+      <ul class="space-y-1 text-sm text-gray-700">
+        <li>Start: {{Fruits | slice:2}}</li>
+        <li>Range: {{Fruits | slice:1:4}}</li>
+        <li>Negative: {{Fruits | slice:-2}}</li>
+        <li>Neg range: {{Fruits | slice:-4:-2}}</li>
+      </ul>
+    </div>
+
+    <!-- Decimal Pipe -->
+    <div class="bg-white shadow rounded-lg p-4 max-w-sm">
+      <h2 class="text-xl font-bold text-gray-700 mb-2">Decimal Pipe</h2>
+      <p class="text-sm text-gray-700">{{decimalNum1 | number}}</p>
+      <p class="text-sm text-gray-700">{{decimalNum2 | number}}</p>
+    </div>
+
+    <!-- TitleCase Pipe -->
+    <div class="bg-white shadow rounded-lg p-4 max-w-sm">
+      <h2 class="text-xl font-bold text-gray-700 mb-2">TitleCase Pipe</h2>
+      <p class="text-sm text-gray-700">Original: 'angular pipes demo'</p>
+      <p class="text-sm text-gray-700">TitleCase: {{ 'angular pipes demo' | titlecase }}</p>
+    </div>
+
+    <!-- JSON Pipe -->
+    <div class="bg-white shadow rounded-lg p-4 max-w-sm">
+      <h2 class="text-xl font-bold text-gray-700 mb-2">JSON Pipe</h2>
+      <p class="text-sm text-gray-700">Fruits: {{Fruits | json}}</p>
+      <p class="text-sm text-gray-700">Component: {{this | json}}</p>
+    </div>
+
+    <!-- Percent Pipe -->
+    <div class="bg-white shadow rounded-lg p-4 max-w-sm">
+      <h2 class="text-xl font-bold text-gray-700 mb-2">Percent Pipe</h2>
+      <p class="text-sm text-gray-700">Quarter: {{0.25 | percent}}</p>
+      <p class="text-sm text-gray-700">Custom: {{0.567 | percent:'1.1-2'}}</p>
+    </div>
+
+  </div>
+</div>
